@@ -15,7 +15,7 @@ parser code
     }  
 :} 
 
-terminal String igual, entero, id, number;
+terminal String equals, entero, id, number;
 terminal String plus, minus, by, divided;
 terminal String semiColon, colon;
 
