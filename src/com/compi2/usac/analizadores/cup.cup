@@ -19,7 +19,7 @@ terminal String equals, entero, id, number;
 terminal String plus, minus, by, divided;
 terminal String semiColon, colon;
 
-non terminal INICIO, DEC, OP, VALOR, T;
+non terminal INICIO, DEC, OP, VALOR, T, ASIG, LID;
 
 precedence left plus, minus;
 precedence left by, divided; 
@@ -44,14 +44,15 @@ OP  ::=  OP plus OP      {::}
 
 T   ::= id      {::}
     |   ASIG    {::}
+;
 
-LID         ::= LID colon T {::}
-            |   T           {::}
+LID ::= LID colon T {::}
+    |   T           {::}
 ;
 
 ASIG    ::= id equals OP   {::}
 ;
 
-DEC         ::= TIPO LID semicolon  {::}
-            |   error semicolon     {::}
+DEC         ::= entero LID semiColon  {::}
+            |   error semiColon     {::}
 ;
