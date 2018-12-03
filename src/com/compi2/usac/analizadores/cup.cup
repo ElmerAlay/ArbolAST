@@ -19,15 +19,18 @@ terminal String equals, entero, id, number;
 terminal String plus, minus, by, divided;
 terminal String semiColon, colon;
 
-non terminal INICIO, DEC, OP, VALOR, T, ASIG, LID;
+non terminal INICIO, DEC, OP, VALOR, T, ASIG, LID, I;
 
 precedence left plus, minus;
 precedence left by, divided; 
 
 start with INICIO; 
 
-INICIO  ::= INICIO DEC
-        |   DEC             {: System.out.println("Bien"); :}
+INICIO  ::= I   {: System.out.println("Bien"); :}
+;
+
+I   ::= I DEC
+    |   DEC            
 ;
 
 VALOR ::=   id:a        {::}
@@ -53,6 +56,6 @@ LID ::= LID colon T {::}
 ASIG    ::= id equals OP   {::}
 ;
 
-DEC         ::= entero LID semiColon  {::}
+DEC         ::= entero LID semiColon  {: System.out.println("Soy dec"); :}
             |   error semiColon     {::}
 ;
