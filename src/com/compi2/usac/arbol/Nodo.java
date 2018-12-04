@@ -13,6 +13,13 @@ public class Nodo {
     private String valor;
     private int idNodo;
     private String separador;
+
+    public Nodo() {
+        etiqueta = null;
+        valor = null;
+        idNodo = 0;
+        separador = null;
+    }
     
     public void addHijos(Nodo hijo){
         hijos.add(hijo);
