@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 
 /**
  * @author Elmer Alay
- * @version 2.0
+ * @version 3.0
  * @since   03-12-2018
  */
 public class Graficar {

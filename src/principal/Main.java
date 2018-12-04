@@ -11,7 +11,7 @@ import java.io.StringReader;
 
 /**
  * @author Elmer Alay
- * @version 1.0
+ * @version 2.0
  * @since   03-12-2018
  */
 public class Main {
@@ -19,7 +19,6 @@ public class Main {
     public static void main(String args[]){
         try{
            String lectura = lecturaArchivo("C:\\Users\\junio\\Desktop\\ejemplo.txt");
-           //System.out.println("Esta es la lectura \n " + lectura);
            ejecutar(lectura);
        }catch(Exception ex){
            
@@ -46,7 +45,6 @@ public class Main {
         parser.parse();
         
         Graficar g = new Graficar();
-        System.out.println(g.graficarNodo(parser.padre));
         g.graficar(parser.padre);
         } catch (Exception e) {
             System.out.println("Error de tipo: " + e.getMessage());
