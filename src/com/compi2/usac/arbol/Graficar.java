@@ -6,8 +6,8 @@ import java.io.PrintWriter;
 
 /**
  * @author Elmer Alay
- * @version 3.0
- * @since   03-12-2018
+ * @version 4.0
+ * @since   04-12-2018
  */
 public class Graficar {
     
