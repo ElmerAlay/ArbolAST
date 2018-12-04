@@ -2,6 +2,7 @@ package principal;
 
 import com.compi2.usac.analizadores.Lexico;
 import com.compi2.usac.analizadores.Parser;
+import com.compi2.usac.arbol.Graficar;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -43,6 +44,10 @@ public class Main {
         Lexico lexer = new Lexico(new StringReader(entrada));
         Parser parser = new Parser(lexer);
         parser.parse();
+        
+        Graficar g = new Graficar();
+        System.out.println(g.graficarNodo(parser.padre));
+        g.graficar(parser.padre);
         } catch (Exception e) {
             System.out.println("Error de tipo: " + e.getMessage());
         }

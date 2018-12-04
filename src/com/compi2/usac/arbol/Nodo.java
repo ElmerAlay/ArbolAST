@@ -4,21 +4,20 @@ import java.util.ArrayList;
 
 /**
  * @author Elmer Alay
- * @version 1.0
+ * @version 2.0
  * @since   03-12-2018
  */
 public class Nodo {
     private String etiqueta;
-    private ArrayList<Nodo> hijos = new ArrayList<>();
+    private ArrayList<Nodo> hijos;
     private String valor;
     private int idNodo;
-    private String separador;
+    private final String separador = "_";
 
-    public Nodo() {
-        etiqueta = null;
-        valor = null;
+    public Nodo(String etiqueta) {
+        this.etiqueta = etiqueta;
+        hijos = new ArrayList<>();
         idNodo = 0;
-        separador = null;
     }
     
     public void addHijos(Nodo hijo){
@@ -60,11 +59,4 @@ public class Nodo {
     public String getSeparador() {
         return separador;
     }
-
-    public void setSeparador(String separador) {
-        this.separador = separador;
-    }
-    
-    
-    
 }

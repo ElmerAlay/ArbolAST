@@ -33,11 +33,11 @@ public class Parser extends java_cup.runtime.lr_parser {
   protected static final short _production_table[][] = 
     unpackFromStrings(new String[] {
     "\000\023\000\002\002\004\000\002\002\003\000\002\011" +
-    "\004\000\002\011\003\000\002\005\003\000\002\005\003" +
-    "\000\002\004\005\000\002\004\005\000\002\004\005\000" +
-    "\002\004\005\000\002\004\004\000\002\004\003\000\002" +
-    "\006\003\000\002\006\003\000\002\010\005\000\002\010" +
-    "\003\000\002\007\005\000\002\003\005\000\002\003\004" +
+    "\004\000\002\011\003\000\002\003\005\000\002\003\004" +
+    "\000\002\010\005\000\002\010\003\000\002\006\003\000" +
+    "\002\006\003\000\002\007\005\000\002\004\005\000\002" +
+    "\004\005\000\002\004\005\000\002\004\005\000\002\004" +
+    "\004\000\002\004\003\000\002\005\003\000\002\005\003" +
     "" });
 
   /** Access to production table. */
@@ -46,32 +46,32 @@ public class Parser extends java_cup.runtime.lr_parser {
   /** Parse-action table. */
   protected static final short[][] _action_table = 
     unpackFromStrings(new String[] {
-    "\000\037\000\006\003\005\005\004\001\002\000\004\006" +
-    "\017\001\002\000\004\014\013\001\002\000\010\002\000" +
-    "\003\005\005\004\001\002\000\010\002\ufffe\003\ufffe\005" +
+    "\000\037\000\006\003\006\005\004\001\002\000\004\006" +
+    "\017\001\002\000\010\002\000\003\006\005\004\001\002" +
+    "\000\004\014\012\001\002\000\010\002\ufffe\003\ufffe\005" +
     "\ufffe\001\002\000\004\002\011\001\002\000\004\002\001" +
-    "\001\002\000\010\002\uffff\003\uffff\005\uffff\001\002\000" +
-    "\010\002\uffef\003\uffef\005\uffef\001\002\000\006\014\ufff2" +
-    "\015\ufff2\001\002\000\006\014\037\015\040\001\002\000" +
-    "\006\014\ufff4\015\ufff4\001\002\000\010\004\020\014\ufff5" +
-    "\015\ufff5\001\002\000\010\006\025\007\024\011\023\001" +
-    "\002\000\016\010\032\011\027\012\030\013\031\014\ufff1" +
-    "\015\ufff1\001\002\000\016\010\ufff6\011\ufff6\012\ufff6\013" +
-    "\ufff6\014\ufff6\015\ufff6\001\002\000\010\006\025\007\024" +
-    "\011\023\001\002\000\016\010\ufffc\011\ufffc\012\ufffc\013" +
-    "\ufffc\014\ufffc\015\ufffc\001\002\000\016\010\ufffd\011\ufffd" +
-    "\012\ufffd\013\ufffd\014\ufffd\015\ufffd\001\002\000\016\010" +
-    "\ufff7\011\ufff7\012\030\013\031\014\ufff7\015\ufff7\001\002" +
+    "\001\002\000\010\002\ufffc\003\ufffc\005\ufffc\001\002\000" +
+    "\010\002\uffff\003\uffff\005\uffff\001\002\000\006\014\ufffa" +
+    "\015\ufffa\001\002\000\006\014\037\015\040\001\002\000" +
+    "\006\014\ufff8\015\ufff8\001\002\000\010\004\020\014\ufff9" +
+    "\015\ufff9\001\002\000\010\006\025\007\024\011\023\001" +
+    "\002\000\016\010\032\011\027\012\030\013\031\014\ufff7" +
+    "\015\ufff7\001\002\000\016\010\ufff1\011\ufff1\012\ufff1\013" +
+    "\ufff1\014\ufff1\015\ufff1\001\002\000\010\006\025\007\024" +
+    "\011\023\001\002\000\016\010\uffef\011\uffef\012\uffef\013" +
+    "\uffef\014\uffef\015\uffef\001\002\000\016\010\ufff0\011\ufff0" +
+    "\012\ufff0\013\ufff0\014\ufff0\015\ufff0\001\002\000\016\010" +
+    "\ufff2\011\ufff2\012\030\013\031\014\ufff2\015\ufff2\001\002" +
     "\000\010\006\025\007\024\011\023\001\002\000\010\006" +
     "\025\007\024\011\023\001\002\000\010\006\025\007\024" +
     "\011\023\001\002\000\010\006\025\007\024\011\023\001" +
-    "\002\000\016\010\ufffb\011\ufffb\012\030\013\031\014\ufffb" +
-    "\015\ufffb\001\002\000\016\010\ufff8\011\ufff8\012\ufff8\013" +
-    "\ufff8\014\ufff8\015\ufff8\001\002\000\016\010\ufff9\011\ufff9" +
-    "\012\ufff9\013\ufff9\014\ufff9\015\ufff9\001\002\000\016\010" +
-    "\ufffa\011\ufffa\012\030\013\031\014\ufffa\015\ufffa\001\002" +
-    "\000\010\002\ufff0\003\ufff0\005\ufff0\001\002\000\004\006" +
-    "\017\001\002\000\006\014\ufff3\015\ufff3\001\002" });
+    "\002\000\016\010\ufff6\011\ufff6\012\030\013\031\014\ufff6" +
+    "\015\ufff6\001\002\000\016\010\ufff3\011\ufff3\012\ufff3\013" +
+    "\ufff3\014\ufff3\015\ufff3\001\002\000\016\010\ufff4\011\ufff4" +
+    "\012\ufff4\013\ufff4\014\ufff4\015\ufff4\001\002\000\016\010" +
+    "\ufff5\011\ufff5\012\030\013\031\014\ufff5\015\ufff5\001\002" +
+    "\000\010\002\ufffd\003\ufffd\005\ufffd\001\002\000\004\006" +
+    "\017\001\002\000\006\014\ufffb\015\ufffb\001\002" });
 
   /** Access to parse-action table. */
   public short[][] action_table() {return _action_table;}
@@ -79,9 +79,9 @@ public class Parser extends java_cup.runtime.lr_parser {
   /** <code>reduce_goto</code> table. */
   protected static final short[][] _reduce_table = 
     unpackFromStrings(new String[] {
-    "\000\037\000\010\002\007\003\006\011\005\001\001\000" +
-    "\010\006\013\007\015\010\014\001\001\000\002\001\001" +
-    "\000\004\003\011\001\001\000\002\001\001\000\002\001" +
+    "\000\037\000\010\002\007\003\006\011\004\001\001\000" +
+    "\010\006\013\007\015\010\014\001\001\000\004\003\012" +
+    "\001\001\000\002\001\001\000\002\001\001\000\002\001" +
     "\001\000\002\001\001\000\002\001\001\000\002\001\001" +
     "\000\002\001\001\000\002\001\001\000\002\001\001\000" +
     "\002\001\001\000\006\004\020\005\021\001\001\000\002" +
@@ -130,7 +130,7 @@ public class Parser extends java_cup.runtime.lr_parser {
 
 
 
-    public static Nodo padre;   //Creación del nodo padre del árbol
+    public Nodo padre;   //Creación del nodo padre del árbol
     public int cont = 0;        //Contador utilizado para los id´s de los nodos del árbol
 
     // Método al que se llama automáticamente ante algún error sintactico.
@@ -192,14 +192,10 @@ class CUP$Parser$actions {
 		 
                 System.out.println("Bien");
                 
-                Nodo nodo = new Nodo();
-                nodo.setEtiqueta("INICIO");
-                nodo.setIdNodo(parser.cont);
+                Nodo nodo = new Nodo("INICIO");
+                nodo.setIdNodo(parser.cont++);
                 nodo.addHijos((Nodo) n1);
-                parser.padre = (Nodo) nodo;
-                parser.cont++;
-
-                RESULT = nodo;                
+                parser.padre = (Nodo) nodo;              
             
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("INICIO",0, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
@@ -216,12 +212,10 @@ class CUP$Parser$actions {
 		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
 		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
 		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("I");
-            nodo.setIdNodo(parser.cont);
+            Nodo nodo = new Nodo("I");
+            nodo.setIdNodo(parser.cont++);
             nodo.addHijos((Nodo) n1);
             nodo.addHijos((Nodo) n2);
-            parser.cont++;
 
             RESULT = nodo;
         
@@ -237,11 +231,9 @@ class CUP$Parser$actions {
 		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
 		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
 		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("I");
-            nodo.setIdNodo(parser.cont);
+            Nodo nodo = new Nodo("I");
+            nodo.setIdNodo(parser.cont++);
             nodo.addHijos((Nodo) n1);
-            parser.cont++;
 
             RESULT = nodo;
         
@@ -250,375 +242,21 @@ class CUP$Parser$actions {
           return CUP$Parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 4: // VALOR ::= id 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		String n1 = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-                Nodo nodo = new Nodo();
-                nodo.setEtiqueta("VALOR");
-                nodo.setValor(n1.toString());
-                nodo.setIdNodo(parser.cont);
-                parser.cont++;
-
-                RESULT = nodo;
-            
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("VALOR",3, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 5: // VALOR ::= number 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		String n1 = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-                Nodo nodo = new Nodo();
-                nodo.setEtiqueta("VALOR");
-                nodo.setValor(n1.toString());
-                nodo.setIdNodo(parser.cont);
-                parser.cont++;
-
-                RESULT = nodo;
-            
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("VALOR",3, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 6: // OP ::= OP plus OP 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
-		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("OP");
-            nodo.setIdNodo(parser.cont);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-
-            Nodo nodo2 = new Nodo();
-            nodo2.setEtiqueta("suma");
-            nodo2.setValor("+");
-            nodo2.setIdNodo(parser.cont);
-            parser.cont++;
-            
-            nodo.addHijos(nodo2);
-            nodo.addHijos((Nodo) n2);
-            
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 7: // OP ::= OP minus OP 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
-		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("OP");
-            nodo.setIdNodo(parser.cont);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-
-            Nodo nodo2 = new Nodo();
-            nodo2.setEtiqueta("resta");
-            nodo2.setValor("-");
-            nodo2.setIdNodo(parser.cont);
-            parser.cont++;
-            
-            nodo.addHijos(nodo2);
-            nodo.addHijos((Nodo) n2);
-            
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 8: // OP ::= OP by OP 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
-		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("OP");
-            nodo.setIdNodo(parser.cont);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-
-            Nodo nodo2 = new Nodo();
-            nodo2.setEtiqueta("multiplicacion");
-            nodo2.setValor("*");
-            nodo2.setIdNodo(parser.cont);
-            parser.cont++;
-
-            nodo.addHijos(nodo2);
-            nodo.addHijos((Nodo) n2);
-            
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 9: // OP ::= OP divided OP 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
-		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("OP");
-            nodo.setIdNodo(parser.cont);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-
-            Nodo nodo2 = new Nodo();
-            nodo2.setEtiqueta("division");
-            nodo2.setValor("/");
-            nodo2.setIdNodo(parser.cont);
-            parser.cont++;
-
-            nodo.addHijos(nodo2);
-            nodo.addHijos((Nodo) n2);
-            
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 10: // OP ::= minus OP 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("OP");
-            nodo.setIdNodo(parser.cont);
-            parser.cont++;
-
-            Nodo nodo2 = new Nodo();
-            nodo2.setEtiqueta("menos");
-            nodo2.setValor("-");
-            nodo2.setIdNodo(parser.cont);
-            
-            nodo.addHijos(nodo2);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-            
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 11: // OP ::= VALOR 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("OP");
-            nodo.setIdNodo(parser.cont);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-            
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 12: // T ::= id 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		String n1 = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("T");
-            nodo.setValor(n1.toString());
-            nodo.setIdNodo(parser.cont);
-            parser.cont++;
-            
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("T",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 13: // T ::= ASIG 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("T");
-            nodo.setIdNodo(parser.cont);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("T",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 14: // LID ::= LID colon T 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
-		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("LID");
-            nodo.setIdNodo(parser.cont);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-
-            Nodo nodo2 = new Nodo();
-            nodo2.setEtiqueta("colon");
-            nodo2.setValor(",");
-            nodo2.setIdNodo(parser.cont);
-            parser.cont++;
-            
-            nodo.addHijos(nodo2);
-            nodo.addHijos((Nodo) n2);
-            
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("LID",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 15: // LID ::= T 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-            Nodo nodo = new Nodo();
-            nodo.setEtiqueta("LID");
-            nodo.setIdNodo(parser.cont);
-            nodo.addHijos((Nodo) n1);
-            parser.cont++;
-
-            RESULT = nodo;
-        
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("LID",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 16: // ASIG ::= id equals OP 
-            {
-              Object RESULT =null;
-		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
-		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
-		String n1 = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
-		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
-		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		
-                Nodo nodo = new Nodo();
-                nodo.setEtiqueta("ASIG");
-                nodo.setIdNodo(parser.cont);
-                parser.cont++;
-
-                Nodo nodo2 = new Nodo();
-                nodo2.setEtiqueta("Id");
-                nodo2.setValor(n1.toString());
-                nodo2.setIdNodo(parser.cont);
-                parser.cont++;
-            
-                Nodo nodo3 = new Nodo();
-                nodo3.setEtiqueta("Equals");
-                nodo3.setValor("=");
-                nodo3.setIdNodo(parser.cont);
-                parser.cont++;
-
-                nodo.addHijos(nodo2);
-                nodo.addHijos(nodo3);
-                nodo.addHijos((Nodo) n2);
-
-                RESULT = nodo;
-            
-              CUP$Parser$result = parser.getSymbolFactory().newSymbol("ASIG",5, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
-            }
-          return CUP$Parser$result;
-
-          /*. . . . . . . . . . . . . . . . . . . .*/
-          case 17: // DEC ::= entero LID semiColon 
+          case 4: // DEC ::= entero LID semiColon 
             {
               Object RESULT =null;
 		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).left;
 		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).right;
 		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
 		
-                    Nodo nodo = new Nodo();
-                    nodo.setEtiqueta("DEC");
-                    nodo.setIdNodo(parser.cont);
-                    parser.cont++;
+                    Nodo nodo = new Nodo("DEC");
+                    nodo.setIdNodo(parser.cont++);
 
-                    Nodo nodo2 = new Nodo();
-                    nodo2.setEtiqueta("Entero");
-                    nodo2.setValor("entero");
-                    nodo2.setIdNodo(parser.cont);
-                    parser.cont++;
+                    Nodo nodo2 = new Nodo("entero");
+                    nodo2.setIdNodo(parser.cont++);
 
-                    Nodo nodo3 = new Nodo();
-                    nodo3.setEtiqueta("semiColon");
-                    nodo3.setValor(";");
-                    nodo3.setIdNodo(parser.cont);
-                    parser.cont++;
+                    Nodo nodo3 = new Nodo(";");
+                    nodo3.setIdNodo(parser.cont++);
 
                     nodo.addHijos(nodo2);
                     nodo.addHijos((Nodo) n1);
@@ -631,11 +269,308 @@ class CUP$Parser$actions {
           return CUP$Parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 18: // DEC ::= error semiColon 
+          case 5: // DEC ::= error semiColon 
             {
               Object RESULT =null;
 		
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("DEC",1, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 6: // LID ::= LID colon T 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
+		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("LID");
+            nodo.setIdNodo(parser.cont++);
+            
+            Nodo nodo2 = new Nodo(",");
+            nodo2.setIdNodo(parser.cont++);
+            
+            nodo.addHijos((Nodo) n1);
+            nodo.addHijos(nodo2);
+            nodo.addHijos((Nodo) n2);
+            
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("LID",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 7: // LID ::= T 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("LID");
+            nodo.setIdNodo(parser.cont++);
+            nodo.addHijos((Nodo) n1);
+
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("LID",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 8: // T ::= id 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		String n1 = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("T");
+            nodo.setValor(n1.toString());
+            nodo.setIdNodo(parser.cont++);
+            
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("T",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 9: // T ::= ASIG 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("T");
+            nodo.setIdNodo(parser.cont++);
+            nodo.addHijos((Nodo) n1);
+
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("T",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 10: // ASIG ::= id equals OP 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
+		String n1 = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
+		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+                Nodo nodo = new Nodo("ASIG");
+                nodo.setIdNodo(parser.cont++);
+
+                Nodo nodo2 = new Nodo(n1.toString());
+                nodo2.setValor(n1.toString());
+                nodo2.setIdNodo(parser.cont++);
+            
+                Nodo nodo3 = new Nodo("=");
+                nodo3.setIdNodo(parser.cont++);
+
+                nodo.addHijos(nodo2);
+                nodo.addHijos(nodo3);
+                nodo.addHijos((Nodo) n2);
+
+                RESULT = nodo;
+            
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("ASIG",5, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 11: // OP ::= OP plus OP 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
+		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("OP");
+            nodo.setIdNodo(parser.cont++);
+
+            Nodo nodo2 = new Nodo("+");
+            nodo2.setIdNodo(parser.cont++);
+            
+            nodo.addHijos((Nodo) n1);
+            nodo.addHijos(nodo2);
+            nodo.addHijos((Nodo) n2);
+            
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 12: // OP ::= OP minus OP 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
+		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("OP");
+            nodo.setIdNodo(parser.cont++);
+
+            Nodo nodo2 = new Nodo("-");
+            nodo2.setIdNodo(parser.cont++);
+            
+            nodo.addHijos((Nodo) n1);
+            nodo.addHijos(nodo2);
+            nodo.addHijos((Nodo) n2);
+            
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 13: // OP ::= OP by OP 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
+		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("OP");
+            nodo.setIdNodo(parser.cont++);
+
+            Nodo nodo2 = new Nodo("*");
+            nodo2.setIdNodo(parser.cont++);
+            
+            nodo.addHijos((Nodo) n1);
+            nodo.addHijos(nodo2);
+            nodo.addHijos((Nodo) n2);
+            
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 14: // OP ::= OP divided OP 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
+		int n2left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n2right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n2 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("OP");
+            nodo.setIdNodo(parser.cont++);
+
+            Nodo nodo2 = new Nodo("/");
+            nodo2.setIdNodo(parser.cont++);
+            
+            nodo.addHijos((Nodo) n1);
+            nodo.addHijos(nodo2);
+            nodo.addHijos((Nodo) n2);
+            
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 15: // OP ::= minus OP 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("OP");
+            nodo.setIdNodo(parser.cont++);
+
+            Nodo nodo2 = new Nodo("-");
+            nodo2.setIdNodo(parser.cont++);
+            
+            nodo.addHijos(nodo2);
+            nodo.addHijos((Nodo) n1);
+            
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 16: // OP ::= VALOR 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		Object n1 = (Object)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+            Nodo nodo = new Nodo("OP");
+            nodo.setIdNodo(parser.cont++);
+            nodo.addHijos((Nodo) n1);
+            
+            RESULT = nodo;
+        
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("OP",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 17: // VALOR ::= id 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		String n1 = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+                Nodo nodo = new Nodo("VALOR");
+                nodo.setValor(n1.toString());
+                nodo.setIdNodo(parser.cont++);
+
+                RESULT = nodo;
+            
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("VALOR",3, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
+            }
+          return CUP$Parser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 18: // VALOR ::= number 
+            {
+              Object RESULT =null;
+		int n1left = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
+		int n1right = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
+		String n1 = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		
+                Nodo nodo = new Nodo("VALOR");
+                nodo.setValor(n1.toString());
+                nodo.setIdNodo(parser.cont++);
+
+                RESULT = nodo;
+            
+              CUP$Parser$result = parser.getSymbolFactory().newSymbol("VALOR",3, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
 

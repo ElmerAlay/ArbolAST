@@ -1,0 +1,32 @@
+INICIO  ::= I;
+
+I   ::= I DEC
+    |   DEC            
+;
+
+DEC ::= entero LID semiColon
+    |   error semiColon
+;
+
+LID ::= LID colon T
+    |   T:n1
+;
+
+T   ::= id
+    |   ASIG
+;
+
+ASIG    ::= id equals OP
+;
+
+OP  ::=  OP plus OP
+    |   OP minus OP
+    |    OP by OP
+    |    OP divided OP
+    |    minus OP
+    |    VALOR  
+;
+
+VALOR ::=   id
+        |   number
+;

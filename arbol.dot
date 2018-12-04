@@ -1,0 +1,16 @@
+digraph G {
+node[shape=box, style=filled, color=blanchedalmond]; 
+edge[color=chocolate3]; 
+rankdir=UD; 
+
+"9_INICIO=null"->"8_I=null";
+"8_I=null"->"5_DEC=null";
+"5_DEC=null"->"6_entero=null";
+"5_DEC=null"->"3_LID=null";
+"3_LID=null"->"1_LID=null";
+"1_LID=null"->"0_T=a";
+"3_LID=null"->"4_,=null";
+"3_LID=null"->"2_T=b";
+"5_DEC=null"->"7_;=null";
+
+}
